@@ -1,6 +1,7 @@
 #!/bin/sh
 # this file is used to read a list of account names and passwords and create system accounts
 # NOTE:  make sure to change the date in the useradd command
+# NOTE:  works in conjunction with accounts.txt file, which contains username (u) and plaintext password (p), separated by a space
 
 cat accounts.txt | while read u p
 do
