@@ -1,9 +1,0 @@
-#!/bin/sh
-# this script is used to read a list of accounts from a text file, then update the expiration date of those accounts
-# NOTE:  don't forget to change the expiration date as needed
-
-cat accounts.txt | while read u
-do
-echo "$u"
-chage -E "2016-02-12" $u
-done
