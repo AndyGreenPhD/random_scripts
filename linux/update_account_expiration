@@ -1,6 +1,7 @@
 #!/bin/sh
 # this script is used to read a list of accounts from a text file, then update the expiration date of those accounts
 # NOTE:  don't forget to change the expiration date as needed
+# NOTE:  works in conjunction with accounts.txt file, which simply contains a list of usernames (u)
 
 cat accounts.txt | while read u
 do
